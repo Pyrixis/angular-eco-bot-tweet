@@ -10,6 +10,7 @@
 
 body {
   margin: 0;
+  background-color: #25221e;
 }
 
 .container {
@@ -34,6 +35,7 @@ h2 {
 h1,
 h2 {
   font-weight: lighter;
+  color: #eeeeee;
 }
 
 p {
