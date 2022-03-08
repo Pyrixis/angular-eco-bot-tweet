@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './graph-tweet/graph-tweet.component';
+import { TweetListComponent } from './graph-tweet/graph-tweet.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -13,9 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([{ path: '', component: ProductListComponent }]),
+    RouterModule.forRoot([{ path: '', component: TweetListComponent }]),
   ],
-  declarations: [AppComponent, TopBarComponent, ProductListComponent],
+  declarations: [AppComponent, TopBarComponent, TweetListComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,16 +1,19 @@
 import { Component } from '@angular/core';
 
-import { products } from '../products';
+interface Food {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   selector: 'app-graph-tweet',
   templateUrl: './graph-tweet.component.html',
-  styleUrls: ['./graph-tweet.component.css']
+  styleUrls: ['./graph-tweet.component.css'],
 })
-export class ProductListComponent {
-  products = products;
-
-  share() {
-    window.alert('The product has been shared!');
-  }
+export class TweetListComponent {
+  foods: Food[] = [
+    { value: 'steak-0', viewValue: 'Steak' },
+    { value: 'pizza-1', viewValue: 'Pizza' },
+    { value: 'tacos-2', viewValue: 'Tacos' },
+  ];
 }
